@@ -110,9 +110,9 @@ print(selected_rows)
 ```
 
 # DataProcessor
-The data_processor function prepares and transforms the data for analysis.Input review and output the predicted rating using lasso model
--Arguments:  Linear Regression / Lasso / XGboost
--Preparation: make lists to store mse values from different models
+The data_processor function prepares and transforms the data for analysis.Input review and output the predicted rating using lasso model  
+-Arguments:  Linear Regression / Lasso / XGboost  
+-Preparation: make lists to store mse values from different models  
 ```R
 lr_mse <- list()
 xgboost_mse <- list()
