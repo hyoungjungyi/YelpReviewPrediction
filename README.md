@@ -1,4 +1,5 @@
 # Yelp Rating Prediction Model
+## Description
 This vignette illustrates an exploratory data analysis (EDA + modeling) performed on Yelp restaurant reviews. The primary goal is to understand the sentiments conveyed through reviews and predict the rating by analyzing the frequency and context of words used.
 
 # Environment Setup and Data Loading
