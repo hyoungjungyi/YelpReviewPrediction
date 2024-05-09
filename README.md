@@ -12,7 +12,8 @@ predictor(train_data, test_data, method = "Lasso")
 ## Functions
 **dataLoader(data,numberOfReviews)** : randomly select three reviews and output the corresponding word frequencies.  
 **dataLoader(sentences)** : output the corresponding word frequencies in the list of sentences.  
-**predictor(train_data, test_data, method)** : output the mse of model training output  
+**predictor(train_data, test_data, method)** : output the mse of model training output    
+**my_prediction_model(my_review)** : put your line of review inside and get the predicted rating
 
 ## Arguments
 **numberOfReviews** : size of the subclass you want to create  
@@ -32,12 +33,13 @@ $Lasso
 [1] 1.811803
 ```
 ```R
-> dataLoader(sample_data_1,3)
+> dataLoader(data=sample_data_1,num=3)
 words
-             1             13           19th             20              3 
-             1              1              1              1              3 
-           300              4              5              a          about 
-             1              1              3             32              7 
+               10                11               200 
+                1                 1                 1 
+               30                 4                40 
+                1                 2                 1 
+                5                 6                60 
 ```
 ```R
 > sentences <- list('I like it', 'this place is so bad', 'I will never come back again')
@@ -45,6 +47,10 @@ words
 words
 again  back   bad  come     i    is    it  like never place    so  this  will 
     1     1     1     1     2     1     1     1     1     1     1     1     1 
-> 
-
+```
+```R
+> predicted_rating <- my_predicted_model("The food was delicious and the staff were very friendly.")
+> print(predicted_rating)
+3
+```
 
